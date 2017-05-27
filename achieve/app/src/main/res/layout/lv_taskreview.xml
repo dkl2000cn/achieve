@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+    
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/list_margintop"
+    android:paddingBottom="@dimen/list_marginbottom"
+    android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >    
+    <TextView
+        android:id="@+id/task_item0_id_tv"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="任务ID"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:lineSpacingMultiplier="1.5"
+        android:text="name"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item30_closedtime_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="80"
+        android:gravity="center"
+        android:textSize="12sp" />
+    
+  <Button
+        android:id="@+id/taskdetails_btn"
+        android:layout_width="@dimen/listbtn_width"
+        android:layout_height="@dimen/listbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+       
+        android:background="@drawable/more"
+        android:focusable="false"
+        android:gravity="center"
+        android:textSize="12sp" />
+   </LinearLayout>
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/list_margintop"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:background="@color/mTextColor2"
+     >    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" > 
+        <TextView
+       
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginLeft="@dimen/margin_left"
+     
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="12sp" /> 
+    <TextView
+       
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="结果评价:"
+        android:textStyle="italic|bold"
+        android:layout_marginLeft="@dimen/marginleft_lvreview"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item30_resultcomment_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        
+        android:text="80"
+        android:textSize="12sp" />
+        </LinearLayout>
+  <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" > 
+     <TextView
+       
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp" />  
+    <TextView
+       
+         android:layout_width="60dp"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/marginleft_lvreview"
+        android:text="过程评价:"
+         android:textStyle="italic|bold"
+        
+        android:textSize="12sp" />  
+    
+      <TextView
+        android:id="@+id/task_item30_closedcomment_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="80"
+       
+        android:textSize="12sp" />
+    </LinearLayout> 
+    
+   <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" > 
+      <TextView
+       
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginLeft="@dimen/margin_left"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp" /> 
+      <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="经验总结:"
+        android:textStyle="italic|bold"
+        android:layout_marginLeft="@dimen/marginleft_lvreview"
+        android:textSize="12sp" />    
+     <TextView
+        android:id="@+id/task_lesson_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:lineSpacingMultiplier="1.25"
+        android:text="80"
+      
+        android:textSize="12sp" />    
+     
+  </LinearLayout>
+  
+  
+  
+  <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" > 
+      <TextView
+       
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginLeft="@dimen/margin_left"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp" /> 
+    
+     <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="任务评论:"
+        android:textStyle="italic|bold"
+       android:layout_marginLeft="@dimen/marginleft_lvreview"
+        android:textSize="12sp" />  
+          <TextView
+        android:id="@+id/task_item30_remark_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:lineSpacingMultiplier="1.25"
+        android:text="80"
+      
+        android:textSize="12sp" />  
+     
+  </LinearLayout>
+   
+  <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" > 
+      <TextView
+       
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+      
+        android:layout_marginLeft="@dimen/margin_left"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp" /> 
+      <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="任务历史:"
+        android:textStyle="italic|bold"
+        android:layout_marginLeft="@dimen/marginleft_lvreview"
+        android:textSize="12sp" />    
+     <TextView
+        android:id="@+id/task_history_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:lineSpacingMultiplier="1.25"
+        android:text="80"
+      
+        android:textSize="12sp" />    
+     
+  </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

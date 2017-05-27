@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+    
+     
+     <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topmargin_dialog"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="邮件"
+        android:textSize="24sp" />
+   <LinearLayout
+    android:id="@+id/ll_inputform"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+     <TextView
+       
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="收件人"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp" /> 
+     <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:background="@color/mistyrose"
+        android:textSize="16sp" />
+     </LinearLayout>
+       <LinearLayout
+  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+     <TextView
+       
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="主  题"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp" /> 
+       <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp"
+           android:text=""
+        android:layout_gravity="center_horizontal"
+        android:background="@color/mistyrose"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:textSize="16sp" />
+       
+         <requestFocus />
+       </LinearLayout>
+        
+       <LinearLayout
+  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+     <TextView
+       
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="内  容"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp" /> 
+    <MultiAutoCompleteTextView
+        android:id="@+id/mactv_body"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/mistyrose"
+        android:hint=""
+        android:ems="10"
+        android:textSize="14sp"
+         >
+
+     </MultiAutoCompleteTextView>
+   </LinearLayout>
+   
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/df_margintop"
+    android:layout_marginBottom="@dimen/df_marginbottom"
+    android:orientation="horizontal">    
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        
+        android:text="确认"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+  
+     </LinearLayout>
+</LinearLayout>

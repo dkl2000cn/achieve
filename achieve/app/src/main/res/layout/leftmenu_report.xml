@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+ <TextView  
+              
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp" 
+                android:layout_marginTop="@dimen/topmargin_dialog"
+                
+                android:text="周期报告"/> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"      
+        android:scrollbars="horizontal" >
+        
+             <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp" 
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                android:text="报告类型"/> 
+             
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">    
+            <RadioGroup
+              
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:orientation="horizontal">
+               <RadioButton
+                android:id="@+id/rb_period1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"             
+                android:text="当日日报" />
+                <RadioButton
+                android:id="@+id/rb_period2"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+       
+                android:text="本周周报" />
+                <RadioButton
+                android:id="@+id/rb_period3"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+             
+                android:text="本月月报" />
+             </RadioGroup>   
+          </LinearLayout>  
+     </LinearLayout> 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/df_margintop"
+    android:layout_marginBottom="@dimen/df_marginbottom"
+    android:orientation="horizontal">  
+      
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:gravity="center"
+        android:text="分享发送"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+     <Button
+        android:id="@+id/btn_sendmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+       
+        android:gravity="center"
+        android:text="发送邮件"
+        android:visibility="gone"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+  
+     </LinearLayout>      
+</LinearLayout>

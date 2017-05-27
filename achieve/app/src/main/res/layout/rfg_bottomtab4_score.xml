@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <TextView  
+                android:id="@+id/text1"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:gravity="center_horizontal|bottom"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/selector_tasktab"
+                android:text="任务成果"/> 
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+   <TextView  
+                android:id="@+id/tv_scoreheader_achieved"  
+                android:layout_width="60dp"  
+                android:layout_height="wrap_content" 
+                android:gravity="left" 
+                android:drawableLeft="@drawable/list"
+                android:drawablePadding="4dp"
+                android:textSize="16sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/darkorchid"/> 
+      <TextView  
+                android:id="@+id/tv_scoreheader_enjoyment"  
+                android:layout_width="60dp"  
+                android:layout_height="wrap_content"           
+                android:drawableLeft="@drawable/list"
+                android:drawablePadding="4dp"
+                android:textSize="16sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/darkorchid"/> 
+     
+        <TextView  
+                android:id="@+id/tv_scoreheader_experience"  
+                android:layout_width="60dp"  
+                android:layout_height="wrap_content" 
+                android:drawableLeft="@drawable/list"
+                android:drawablePadding="4dp"
+                android:textSize="16sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/darkorchid"/> 
+   
+    </LinearLayout>            
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFCCCC"
+    android:gravity="left|start"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+   <TextView
+        android:id="@+id/scoreheader1_tv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="任务"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/scoreheader2_tv"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:text="成就"
+         android:gravity="center"
+        android:textSize="13sp" />
+
+   <TextView
+        android:id="@+id/scoreheader3_tv"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="快乐"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/scoreheader4_tv"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="经验"
+        android:textSize="13sp" />
+    
+  <TextView
+        android:id="@+id/scoreheader5_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.79"
+        android:gravity="center"
+        android:text="详细"
+        android:textSize="13sp" />  
+    
+  </LinearLayout>              
+     <ListView
+        android:id="@+id/taskscore_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:tag="show"
+        android:scrollbars="vertical" />
+    
+</LinearLayout>

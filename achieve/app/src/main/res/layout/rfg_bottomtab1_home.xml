@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ring="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ <TextView   
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"           
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="今天是:"
+                android:textSize="16sp"
+               /> 
+      <TextView
+                android:id="@+id/tv_todaydate"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"           
+                android:textSize="14sp"
+               
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text=""
+             />
+
+        <com.easygoal.achieve.WindMillView
+            android:id="@+id/tv_worklight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/tv_yellowlight"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="@dimen/imgbtn_padding"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_redlight"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="@dimen/imgbtn_padding"
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_bluelight"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginRight="@dimen/imgbtn_padding"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+   <TextView  
+             
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:text="任务箱"
+                android:textSize="16sp"
+                 android:layout_marginLeft="@dimen/margin_left"
+                android:drawableBottom="@drawable/shape_line"/>
+   
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="horizontal" >
+   
+   <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="未完成总数"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_opentaskscount"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="今日到期数"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_todaytaskscount"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+        <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="过期数"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_overduetaskscount"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      </LinearLayout>                      
+      
+      <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="A(重要+紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_opentaskscount_a"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="A(重要+紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_todaytaskscount_a"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+        <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="A(重要+紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_overduetaskscount_a"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      </LinearLayout>  
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                 android:layout_marginLeft="@dimen/margin_left"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="B(紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_opentaskscount_b"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="B(紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_todaytaskscount_b"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+        <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="B(紧急)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_overduetaskscount_b"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      </LinearLayout> 
+      
+      <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                 android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="C(重要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_opentaskscount_c"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="C(重要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_todaytaskscount_c"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+        <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="C(重要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_overduetaskscount_c"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      </LinearLayout>  
+     
+       <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/mistyrose"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                 android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="D(非紧要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_opentaskscount_d"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="D(非紧要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_todaytaskscount_d"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+        <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.3"
+                android:gravity="left" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="D(非紧要)"
+                android:background="@color/mistyrose"/> 
+      <TextView  
+                android:id="@+id/tv_overduetaskscount_d"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.1"
+                android:gravity="left" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+      </LinearLayout> 
+    </LinearLayout>    
+ <TextView  
+                android:id="@+id/tv_deadlinetasks"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                android:gravity="center" 
+                 android:layout_marginLeft="@dimen/margin_left"
+                android:text="今日到期"
+                android:textSize="16sp"
+                android:drawableBottom="@drawable/shape_line"/>  
+   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mTextColor7"
+    android:gravity="left|start"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+  <TextView
+        android:id="@+id/taskheader1_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+         android:layout_marginLeft="@dimen/margin_left"
+        android:text="@string/goal"
+         android:layout_gravity="center_vertical"
+        android:gravity="start"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/priority"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+   <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+          android:text="@string/classify"
+          android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+
+   <TextView
+        android:id="@+id/taskheader3_tv"
+         android:layout_width="60dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="期限"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/taskheader4_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"      
+        android:text="完成%"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+   
+   <TextView
+               
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/listpadding_top"
+                android:layout_marginBottom="@dimen/listpadding_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/tree_32px"
+                
+                android:textSize="14sp" /> 
+    
+  </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabhostHeightWithRefresh"
+        android:background="#ffffff" >
+
+    <com.easygoal.achieve.mListView
+    android:id="@+id/todaytasks_lv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:scrollbars="vertical"
+  />
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

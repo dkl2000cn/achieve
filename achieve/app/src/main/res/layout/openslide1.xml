@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+     android:focusable="false"
+     android:background="#cc99cc"
+   >
+     <TextView  
+               android:id="@+id/tv1"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" 
+                 android:textSize="22sp"
+                  android:gravity="center"
+                 android:layout_marginTop="80dp"
+                      android:textColor="@color/white"
+                 android:text="制定目标和计划 "
+       />          
+       <TextView  
+                android:id="@+id/tv2"
+                android:layout_below="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                 android:textSize="16sp"
+                   android:gravity="center"
+                 
+                 android:layout_marginTop="10dp"
+                 android:text="要做什么？ "
+       /> 
+         <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                  android:layout_centerVertical="true"
+                  android:layout_centerHorizontal="true"
+                 android:background="@drawable/plan"
+       />  
+           
+  <TextView  
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@+id/iv1"
+                android:layout_marginTop="40dp"
+                 android:textSize="16sp"
+                android:gravity="center"
+             
+                 android:text="目标评估   智能排序分类  闭环管理 "
+       />
+  
+  
+</RelativeLayout>

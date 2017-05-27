@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+    
+       <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topmargin_dialog"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="关于目标达应用"
+        android:textSize="24sp" />
+   
+  
+    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:orientation="horizontal" >
+
+       <TextView  
+                
+                android:layout_width="80dp"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="应用简介"
+                android:background="@color/mistyrose"/> 
+    
+    <TextView  
+        android:id="@+id/rb_rating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"         
+        android:paddingBottom="2dp"
+        android:layout_gravity="center_vertical"
+        android:text="目标达是一款智能目标任务管理软件,可以帮您合理安排目标任务,全程跟踪检查进度,量化评价结果,一键连接目标、计划、过程和结果,轻松掌控事务和日程"
+       
+        />
+    </LinearLayout>
+    
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+
+       <TextView  
+                
+                android:layout_width="80dp"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="应用特色"
+                android:background="@color/mistyrose"/> 
+    
+    <TextView
+        android:id="@+id/rb_rating3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center_vertical"
+        android:text="☆智能清单☆量化☆多维评估☆目标管理(SMART)☆过程控制(PDCA)☆团队协同☆时间管理(GTD)"
+        />
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+       <TextView  
+                
+                android:layout_width="80dp"   
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="最新版本"
+                android:background="@color/mistyrose"/> 
+       <TextView 
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="1.6.0"/>
+     </LinearLayout> 
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+
+       <TextView  
+               
+                android:layout_width="80dp"   
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="QQ:"
+                android:background="@color/mistyrose"/> 
+    
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="3426310896(目标达)"
+         />
+    </LinearLayout>
+      <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+
+       <TextView  
+               
+                android:layout_width="80dp"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="E-Mail"
+                android:background="@color/mistyrose"/> 
+    
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="EasygoalTech@sohu.com"
+         />
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="30dp"
+         android:orientation="horizontal" >
+
+       <TextView  
+               
+                android:layout_width="80dp"   
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="开发者"
+                android:background="@color/mistyrose"/> 
+    
+    <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:text="目标达团队(负责人:丁科亮)"/>
+    
+    </LinearLayout>
+</LinearLayout>

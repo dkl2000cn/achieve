@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/task_item0_id_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+<TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <TextView
+        android:id="@+id/task_item4_importance_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="5dp" />
+    
+    <TextView
+        android:id="@+id/task_item5__urgency_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="5dp" />
+     
+     <TextView
+        android:id="@+id/task_item7_priority_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="high"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+       <TextView
+        android:id="@+id/task_item15_deadline_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+         android:text="deadline"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <TextView
+        android:id="@+id/task_item16_progress_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+         android:text="80%"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <TextView
+        android:id="@+id/task_item17_reminder_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+         android:text="true"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <TextView
+        android:id="@+id/task_item18_status_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="open"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <TextView
+        android:id="@+id/task_item19_finished_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="false"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <TextView
+        android:id="@+id/task_item20_delayed_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+         android:text="false"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />  
+</LinearLayout>

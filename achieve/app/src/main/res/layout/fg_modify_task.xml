@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical" >
+ <EditText
+        android:id="@+id/task_item1_name_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <EditText
+        android:id="@+id/task_item2_createdtime_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="createdtime"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <EditText
+        android:id="@+id/task_item3_description_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <EditText
+        android:id="@+id/task_item4_importance_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="importance"
+        android:textSize="5dp" />
+    
+    <EditText
+        android:id="@+id/task_item5_urgency_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="urgency"
+        android:textSize="5dp" />
+     <EditText
+        android:id="@+id/task_item6_assess_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="assess"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+     
+     <EditText
+        android:id="@+id/task_item7_priority_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="priority"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <EditText
+        android:id="@+id/task_item8_passion_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="passion"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    
+    <EditText
+        android:id="@+id/task_item9_difficulty_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="difficulty"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    
+    
+    <EditText
+        android:id="@+id/task_item10_duration_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="duration"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+      <EditText
+        android:id="@+id/task_item11_achieved_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="achieved"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+       <EditText
+        android:id="@+id/task_item12_enjoyment_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="enjoyment"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+       <EditText
+        android:id="@+id/task_item13_experience_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="experience"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    
+     <EditText
+        android:id="@+id/task_item14_startedtime_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="startedtime"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+       <EditText
+        android:id="@+id/task_item15_deadline_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="deadline"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <EditText
+        android:id="@+id/task_item16_progress_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="60%"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <EditText
+        android:id="@+id/task_item17_reminder_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="reminder"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <EditText
+        android:id="@+id/task_item18_status_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <EditText
+        android:id="@+id/task_item19_finished_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="finished"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+        <EditText
+        android:id="@+id/task_item20_delayed_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="delayed"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />   
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:orientation="horizontal" >
+    <Button
+        android:id="@+id/task_confirm_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="confirm"
+        android:textSize="5dp" />
+     <Button
+        android:id="@+id/task_delete_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="delete"
+        android:textSize="5dp" />
+       <Button
+        android:id="@+id/task_update_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="update"
+        android:textSize="5dp" />
+         <Button
+        android:id="@+id/task_clear_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="clear"
+        android:textSize="5dp" />
+         <Button
+        android:id="@+id/add_comments_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="addcomments"
+        android:textSize="5dp" />
+</LinearLayout>
+  
+    
+</LinearLayout>

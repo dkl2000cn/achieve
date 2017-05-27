@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="@dimen/margin_top"
+         android:orientation="horizontal" >
+         
+               <TextView
+                android:id="@+id/tv_scoreheader_accomplished"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" 
+                android:gravity="left" 
+                android:drawableLeft="@drawable/accomplished"
+                android:drawablePadding="4dp"
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"/> 
+            <TextView
+                android:id="@+id/tv_scoreheader_achieved"  
+               android:layout_width="0dp"  
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" 
+                android:gravity="left" 
+                android:drawableLeft="@drawable/achieved"
+                android:drawablePadding="4dp"
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"/> 
+      
+     
+        <TextView  
+                android:id="@+id/tv_scoreheader_experience"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" 
+                android:drawableLeft="@drawable/experience"
+                android:drawablePadding="4dp"
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"/> 
+              <TextView
+                android:id="@+id/tv_scoreheader_enjoyment"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"         
+                android:drawableLeft="@drawable/happy"
+                android:drawablePadding="4dp"
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"/> 
+        
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mTitleColor_Dialog"
+    android:gravity="left|start"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+   <TextView
+        android:id="@+id/scoreheader1_tv"
+       android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+        android:text="@string/goal"
+        android:textSize="14sp" />
+       <TextView
+        android:id="@+id/scoreheader2_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:text="成就"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="14sp" />
+   
+    <TextView
+       
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:text="执行力"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/scoreheader4_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="经验"
+        android:textSize="14sp" />
+    
+   <TextView
+        android:id="@+id/scoreheader3_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="快乐"
+        android:textSize="14sp" />
+
+       <TextView
+               
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/listpadding_top"
+                android:layout_marginBottom="@dimen/listpadding_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/tree_32px"
+                
+                android:textSize="14sp" />  
+    
+  </LinearLayout>              
+     <ListView
+        android:id="@+id/taskscore_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabhostheight"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:tag="show"
+         android:fastScrollEnabled="true"
+         android:scrollbars="vertical" />
+    
+</LinearLayout>

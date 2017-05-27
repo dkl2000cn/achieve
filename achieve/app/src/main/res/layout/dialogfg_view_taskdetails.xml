@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="wrap_content"   
+    android:background="@android:color/transparent"  
+    android:gravity="center" >  
+
+ <Button  
+        android:id="@+id/task_close_bt"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/closewin" 
+        android:minHeight="36dp"
+        android:minWidth="36dp"
+          />   
+            <TextView  
+                android:id="@+id/tv_header"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:layout_below="@+id/task_close_bt"
+                android:layout_marginTop="@dimen/margin_top"
+                android:gravity="center" 
+                android:layout_marginLeft="10dp"
+                android:text="查看任务"/>
+       <TextView
+        android:id="@+id/tv_teamname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_header"
+        android:layout_toRightOf="@+id/tv_header"
+        android:textColor="@color/darkgreen"
+        android:layout_marginLeft="5dp"
+         android:textSize="16sp"
+         />
+    <TextView
+        android:id="@+id/task_item2_createdtime_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/tv_header"
+       
+        android:layout_marginLeft="10dp"
+        android:text="createdtime"
+       
+        android:textSize="14sp" />
+            
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" 
+      android:layout_below="@+id/task_item2_createdtime_tv"
+      android:layout_marginTop="@dimen/margin_top"
+      android:orientation="vertical"
+      android:scrollbars="vertical" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/titlecolor_dialog"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+             
+              android:gravity="center_vertical"
+              android:text="任务ID"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item0_taskID_tv"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/task_close_bt"
+             
+              android:text="taskID"
+              android:textSize="14sp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_bottom"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:id="@+id/tv_newtaskname"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              android:text="任务名称"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item1_name_tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+              android:editable="true"
+              android:text="name"
+              android:textSize="14sp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:id="@+id/tv_newtaskdescription"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              android:text="任务概要"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item3_description_tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:editable="true"
+              android:saveEnabled="true"
+              android:text=""
+              android:scrollbars="vertical"
+              android:textSize="12sp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_bottom"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="最后期限"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item15_deadline_tv"
+              android:layout_width="80dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="1dp"
+              android:text=""
+              android:layout_gravity="center_vertical"
+              android:textSize="12sp" />
+
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="开始时间"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item14_startedtime_tv"
+              android:layout_width="80dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+               android:layout_gravity="center_vertical"
+              android:text=""
+              android:textSize="12sp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_bottom"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:id="@+id/tv_newtaskimportance"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              android:text="重要程度"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item4_importance_tv"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+              android:text="importance"
+              android:visibility="gone"
+              android:textSize="14sp" />
+         <RatingBar
+        android:id="@+id/rb_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:progress="0"
+        android:numStars="3"
+        android:rating="0.0"
+        android:isIndicator="true"
+        style="@style/mRatingBar"    
+        />
+          
+          
+          <TextView
+              android:id="@+id/tv_newtaskurgency"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+               android:layout_marginLeft="30dp"
+              android:text="紧急程度"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item5_urgency_tv"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+              android:text="urgency"
+              android:visibility="gone"
+              android:textSize="14sp" />
+           <RatingBar
+        android:id="@+id/rb_urgency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:progress="0"
+        android:numStars="3"
+        android:rating="0.0"
+        android:isIndicator="true"
+        style="@style/mRatingBar"    
+
+        />
+          
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_bottom"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:id="@+id/tv_newtaskdifficulty"
+              android:layout_width="60dp"
+              android:layout_height="24dp"
+              android:layout_marginLeft="10dp"
+              android:gravity="center_vertical"
+              android:text="困难程度"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item9_difficulty_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+              android:text="difficulty"
+              android:visibility="gone"
+              android:textSize="14sp" />
+           <RatingBar
+        android:id="@+id/rb_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+               android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:progress="0"
+          android:numStars="3"
+        android:rating="0.0"
+        android:isIndicator="true"
+        style="@style/mRatingBar"    
+        />
+          
+
+          <TextView
+              android:id="@+id/tv_newtaskpassion"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:layout_marginLeft="30dp"
+              android:text="兴趣程度"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item8_passion_tv"
+              android:layout_width="match_parent"
+              android:layout_height="24dp"
+              android:layout_margin="0dp"
+              android:text="passion"
+              android:visibility="gone"
+              android:textSize="14sp" />
+                   <RatingBar
+        android:id="@+id/rb_passion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:progress="0"
+        android:numStars="3"
+        android:rating="0.0"
+        android:isIndicator="true"
+        style="@style/mRatingBar"    
+        />
+          
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_bottom"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="vertical" >
+
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="预计用时"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item10_duration_tv"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="30"
+              android:textSize="14sp" />
+         <TextView
+              android:id="@+id/task_durationunit_tv"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_margin="1dp"
+              android:text=""
+              android:textSize="14sp" />
+          <TextView
+              android:id="@+id/tv_maxperiod"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:text="可用天数"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item21_maxperiod_tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dp"
+              android:gravity="center"
+              android:text=""
+              android:textSize="14sp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margin_top"
+          android:orientation="horizontal"
+          android:scrollbars="horizontal" >
+
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="当前进度"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item16_progress_tv"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="60"
+              android:textSize="14sp" />
+         <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+             
+              android:text="%"
+              android:textSize="14sp" />
+          <TextView
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:text="当前状态"
+              android:textSize="14sp" />
+
+          <TextView
+              android:id="@+id/task_item18_status_tv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="status"
+              android:textSize="14sp" />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/titlecolor_dialog"
+          android:gravity="center_vertical"
+          android:text="  全部进度"
+          android:textSize="14sp" />
+      
+       <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mistyrose"
+    android:gravity="left|start"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+
+    <TextView
+        android:id="@+id/taskheader1_tv"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/taskheader4_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="活动描述"
+        android:textSize="14sp" /> 
+    <TextView
+        android:id="@+id/taskheader2_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+   <TextView
+        android:id="@+id/taskheader3_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="完成%"
+        android:textSize="14sp" />
+           <TextView
+               android:layout_width="@dimen/imgbtn_width"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="@dimen/margin_right"
+               android:layout_gravity="center_vertical"
+               android:textSize="14sp" />
+  </LinearLayout>    
+
+      <ListView
+          android:id="@+id/taskcomments_lv"
+          android:layout_width="match_parent"
+          android:layout_height="0dp" 
+          android:layout_weight="1" 
+          android:scrollbars="vertical"
+          android:descendantFocusability="blocksDescendants"
+          android:focusable="true"
+         
+          android:tag="show" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:orientation="horizontal"
+          android:scrollbars="horizontal" >
+         <Button
+              android:id="@+id/task_update_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="刷新"
+              android:visibility="gone"
+              android:textSize="14sp" />
+          <Button
+              android:id="@+id/task_edit_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="编辑\n任务"
+              android:textSize="14sp" />
+           <Button
+              android:id="@+id/subtask_edit_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="编辑\n子目标"
+              android:textSize="14sp" />
+          <Button
+              android:id="@+id/task_delete_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="删除"
+              android:visibility="gone"
+              android:textSize="14sp" />
+           <Button
+           android:id="@+id/record_canceltask_bt"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/margin_left"
+           android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_weight="0.3"
+        android:background="@drawable/btncolor"
+        android:text="取消\n任务"
+          android:visibility="gone"
+        android:textSize="14sp" />
+            <Button
+        android:id="@+id/add_remarks_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_weight="0.3"
+        android:background="@drawable/btncolor"
+        android:text="任务\n评论"
+        android:textSize="14sp" />  
+         <Button
+              android:id="@+id/add_comments_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="任务\n进度"
+              android:textSize="14sp" />
+           <Button
+              android:id="@+id/quickclose_bt"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:layout_marginRight="@dimen/margin_right"
+              android:layout_marginTop="@dimen/margin_top"
+              android:layout_marginBottom="@dimen/margin_bottom"
+              android:layout_weight="0.3"
+              android:background="@drawable/btncolor"
+              android:text="快速\n结束"
+              android:textSize="14sp" />
+      
+      </LinearLayout>
+  </LinearLayout>
+ 
+ </RelativeLayout> 

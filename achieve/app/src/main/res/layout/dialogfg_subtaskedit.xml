@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <Button
+     android:id="@+id/btn_closewin"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="top|right"
+     android:background="@drawable/closewin"
+     android:minHeight="32dp"
+     android:minWidth="32dp" />
+       <TextView  
+                android:id="@+id/tv_header"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                 android:layout_below="@+id/task_close_bt" 
+                  android:layout_marginTop="@dimen/margin_top"
+                android:gravity="center" 
+                android:layout_marginLeft="5dp"
+                android:text="编辑子目标"/> 
+     <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                  <TextView
+        android:id="@+id/tv_totalweight"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="总权重(%):"
+        android:textSize="14sp" />
+                    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/titlecolor_dialog"
+    android:gravity="left|start"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+       <TextView
+        android:id="@+id/taskheader1_tv"
+         android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+         android:layout_gravity="center_vertical"
+        android:text="NO"
+        android:textSize="14sp" />
+       <TextView
+        android:id="@+id/taskheader2_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="内容"
+        android:layout_gravity="center_vertical"
+        android:textSize="14sp" />
+         <TextView
+        android:id="@+id/taskheader3_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="期限"
+        android:textSize="14sp" />
+       <TextView
+        
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+    
+        android:text="权重%"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="14sp" />
+
+         <TextView
+       
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/listpadding_top"
+        android:layout_marginBottom="@dimen/listpadding_bottom"
+        android:layout_gravity="center_vertical"
+        
+        android:focusable="false"
+        android:gravity="center"
+     
+        />
+    
+    
+  </LinearLayout>    
+                    
+                 <android.support.v7.widget.RecyclerView
+                 android:id="@+id/rv_progedit"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"        
+                 android:scrollbars="vertical"
+                 android:descendantFocusability="afterDescendants"
+                 android:tag="show" />  
+                           
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="left|start"
+    android:layout_marginTop="@dimen/margin_top"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >            
+       <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@drawable/newitem_32px"
+        android:textSize="14sp" />
+       <EditText
+        android:id="@+id/et_addsub_content"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="新内容"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/selector_edittextenter"
+        android:layout_gravity="center_vertical"
+       
+        android:textSize="14sp" />
+        <EditText
+        android:id="@+id/et_addsub_deadline"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:hint="默认"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/selector_edittextenter"
+        android:textSize="14sp" />
+       <EditText
+        android:id="@+id/et_addsub_weight"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:hint="%"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:background="@drawable/selector_edittextenter"
+        android:textSize="14sp" />
+    
+       
+        <TextView
+        android:id="@+id/tv_addSubItem"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/additem"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"  
+        android:textSize="14sp" />
+                   
+                </LinearLayout>
+        </LinearLayout>
+         <LinearLayout
+                    android:id="@+id/ll_bottomBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" >
+
+                    <Button
+                        android:id="@+id/task_confirm_bt"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="@dimen/margin_left"
+                         android:layout_marginTop="@dimen/margin_top"
+                         android:layout_marginBottom="@dimen/margin_bottom"
+                         android:layout_marginRight="@dimen/margin_right"
+                         android:layout_weight="0.3"
+                        android:background="@color/tan"
+                        android:layout_alignParentBottom="true" 
+                        android:text="保存"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/task_cancel_bt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:background="@color/gray"
+                       
+                        android:text="取消"
+                        android:textSize="14sp" />
+                </LinearLayout>    
+</LinearLayout>

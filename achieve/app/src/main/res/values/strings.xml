@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools" 
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">目标达</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="app_slogan">高效执行   收获满意</string>
+    
+    
+     <string name="goal">目标/任务</string>
+      <string name="taskreview">目标/任务总结</string>
+     <string name="open">open</string>
+      <string name="close">close</string>
+   <drawable name="color_normal">#D3D3D3</drawable>
+   <drawable name="color_pressed">#BA55D3</drawable>
+   <drawable name="titlecolor_dialog">#D2B48C  </drawable>
+   <drawable name="btncolor_ok">#D2B48C</drawable>
+   <drawable name="btncolor_no">#A9A9A9</drawable>
+   <drawable name="btncolor">#F5DEB3</drawable>
+   
+      <string name="classify">智能\n分类</string>
+      <string name="priority">智能\n排序</string>
+      <string name="assessment">重要\n紧急</string>
+      <string name="duration">期限</string>
+      <string name="prog">完成%</string>
+       
+      <string name="memo_slogan">随时保存重要信息、灵感</string> 
+      <string name="memotitle">备忘名称</string> 
+      <string name="memocontent">备忘内容</string>
+      
+    
+      <string name="memoalarm">添加提醒(点击可选)</string>
+      
+      <string name="header_memoaddpic">插入图片</string>
+      <string name="text_memoaddpic">插入图片</string> 
+      <string name="header_memoaddfile">插入文件</string>
+      <string name="text_memoaddfile">插入文件(视频、音频、文本等)</string>
+      <string name="header_memolocation">添加地址</string>
+
+      <string name="header_memo_alterpic">更换图片</string>
+      <string name="text_memo_alterpic">更换图片</string> 
+      <string name="header_memo_alterfile">更换附件</string>
+
+      <string name="text_memo_alterfile">更换文件(视频、音频、文本等)</string>  
+      
+      <string name="reminder_slogan">提醒任务(T)\备忘(M)\自定义(R)</string> 
+      <string name="remindername">提醒名称</string> 
+      <string name="remindercontent">提醒内容(可选)</string>
+      <string name="remindertime">提醒时间</string>
+            
+      <string name="title_taskrecord">目标/任务活动描述</string>
+      
+      <string name="generic_server_down">服务器超时</string>
+      <string name="no_internet">无网络连接</string>
+      <string name="generic_error">常见错误</string>
+      <string name="AuthFailureError">用户权限错误</string>
+  
+</resources>

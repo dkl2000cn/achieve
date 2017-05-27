@@ -1,0 +1,143 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.easygoal.achieve.Activity_BDLocation" >
+
+    <include
+        layout="@layout/layout_changteamtitlebar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center|center_vertical"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="@dimen/margin_bottom"
+             android:layout_marginRight="10dp"
+             android:textColor="@color/orange"
+             android:text="任务团队"
+             android:textSize="18sp" />
+       <TextView
+           android:id="@+id/tv_teamname"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center|center_vertical"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="@dimen/margin_bottom"
+           android:layout_marginRight="5dp"
+           android:textColor="@color/darkgreen"
+           android:text=""
+           android:visibility="gone"
+           android:textSize="14sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_teamname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/mistyrose"
+        android:hint="输入团队名称"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_teamowner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/mistyrose"
+        android:hint="输入口令"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/darkgreen"
+        android:text="口令为该团队已知成员昵称"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/df_marginbottom"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_seek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="查看"
+            android:background="@color/lightsalmon"
+            android:visibility="gone"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="加入"
+            android:background="@color/lightsalmon"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="新建"
+            android:background="@color/sandybrown"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:visibility="gone"
+            android:text="取消"
+            android:background="@color/gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </LinearLayout>
+</layout>

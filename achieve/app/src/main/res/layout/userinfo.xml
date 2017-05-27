@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+    
+       <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="用户信息"
+        android:textSize="24sp" />
+   
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+       <ImageView 
+                
+                android:layout_width="100dp"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 
+                android:background="@color/mistyrose"/> 
+    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="vertical" >
+      <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户Id"
+                android:background="@color/mistyrose"/> 
+       <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户名"
+                android:background="@color/mistyrose"/> 
+        <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="昵称"
+                android:background="@color/mistyrose"/>  
+                 <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户类型"
+                android:background="@color/mistyrose"/>   
+               
+                    <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户积分"
+                android:background="@color/mistyrose"/> 
+                   <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户等级"
+                android:background="@color/mistyrose"/>  
+               
+                 <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="登录次数"
+                android:background="@color/mistyrose"/>             
+               <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="最新登录"
+                android:background="@color/mistyrose"/>  
+                  <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:background="@color/mediumorchid"
+        android:text="修改资料"
+        android:textSize="16sp" />
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal">"
+     <TextView  
+                
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                 android:text="关注"
+                android:background="@color/mistyrose"/>   
+                 <TextView  
+                
+                   android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:gravity="center"
+                 android:text="粉丝"
+                android:background="@color/mistyrose"/> 
+                <TextView  
+                
+                    android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:gravity="center"
+                 android:text="组织"/>
+                
+                <TextView  
+                    android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.25"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:gravity="center"
+                 android:text="所在群"
+                android:background="@color/mistyrose"/>   
+      </LinearLayout>
+  
+</LinearLayout>

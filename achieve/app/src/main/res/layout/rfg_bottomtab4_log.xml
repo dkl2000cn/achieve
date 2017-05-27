@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView  
+                android:id="@+id/text1"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:gravity="center" 
+                android:text="大事记"/> 
+
+     <TextView
+        android:id="@+id/log_item2_dayaddtasks_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/log_item3_dayfinishedtasks_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+       <TextView
+        android:id="@+id/log_item4_daycancelledtasks_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/log_item8_totalachieved_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/log_item9_totalenjoyment_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/log_item10_totalexperience_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+     <ListView
+        android:id="@+id/tasklog_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:tag="show"
+        android:scrollbars="vertical" />
+        
+</LinearLayout>

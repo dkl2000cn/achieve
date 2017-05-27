@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+     android:focusable="false"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+   <TextView  
+                android:id="@+id/tv_cancelledtaskscount"  
+                android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+                android:gravity="left" 
+                android:drawableLeft="@drawable/list"
+                android:drawablePadding="4dp"
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_left"
+              />
+
+         <include layout="@layout/layout_toolbox"
+             ></include>
+</LinearLayout>   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mTextColor7"
+    
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+   <TextView
+        android:id="@+id/taskheader1_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+         android:text="@string/goal"
+        android:textSize="13sp" />
+      <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/classify"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp" />
+
+   <TextView
+        android:id="@+id/taskheader2_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="@string/assessment"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:textSize="13sp" />
+  
+   <TextView
+        android:id="@+id/taskheader3_tv"
+         android:layout_width="60dp"
+        android:layout_height="wrap_content"
+       
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="期限"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/taskheader4_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="完成%"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+   
+   <TextView
+               
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/listpadding_top"
+                android:layout_marginBottom="@dimen/listpadding_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/tree_32px"
+                
+                android:textSize="14sp" />
+    
+  </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabhostHeightWithRefresh"
+        android:background="#ffffff" >
+     <ListView
+     android:id="@+id/cancelledtasks_lv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:descendantFocusability="blocksDescendants"
+         android:fastScrollEnabled="true"
+         android:scrollbars="vertical"
+         android:tag="show" >
+
+    </ListView>
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.easygoal.achieve.Activity_BDLocation" >
+    
+         <TextView
+             android:id="@+id/tv_bdlocation"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center|center_vertical"
+             android:gravity="center"
+             android:layout_marginLeft="10dp"
+             android:layout_marginBottom="@dimen/margin_bottom"
+             android:layout_marginRight="10dp"
+             android:background="@color/white"
+             android:textColor="@color/orange"
+             android:text="获取地址中..."
+             android:textSize="16sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:textColor="@color/mediumorchid"
+        android:text="(若暂未取得定位信息,请若干秒后重试)"
+        android:textSize="14sp" />
+
+</LinearLayout>

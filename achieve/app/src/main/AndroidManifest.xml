@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.easygoal.achieve"
+    android:versionCode="8"
+    android:versionName="1.6.0"
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"  />
+
+    <application
+        android:name="com.easygoal.achieve.AppData"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+
+        android:theme="@style/AppThemeNoActionBar" >
+
+    <service
+	    android:name="com.baidu.location.f"
+	    android:enabled="true"
+	    android:process=":remote" >
+        </service>
+        <service android:name="com.easygoal.achieve.RocketService"></service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="phHIyvCzefZFGGaGAahUZAfIa9lLAZam" />
+        <meta-data android:name="BDAPPID" android:value="9180690"/>
+        <meta-data android:name="BDAPPKEY" android:value="nZ3XUupowt5XmEc1Ia1jvcTtUfnw81V6"/>
+        <meta-data android:value="58bd55aec62dca77510010ac" android:name="UMENG_APPKEY"/>
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="k51hidwqkez3b" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.easygoal.achieve.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="4b7a93594bb0ff8e7ea8a865cf213418">
+        </meta-data>
+
+        <activity
+            android:name="com.easygoal.achieve.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/OpenAppThemeNoActionBar" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  
+            android:name="com.easygoal.achieve.AlarmActivity"  
+              android:screenOrientation="portrait"
+              android:configChanges="orientation"
+            android:label="@string/app_name" >  
+        </activity> 
+          <activity  
+            android:name="com.easygoal.achieve.Activity_RequestPermission"  
+              android:screenOrientation="portrait"
+              android:configChanges="orientation"
+            android:label="@string/app_name" >  
+        </activity> 
+         <activity  
+            android:name="com.easygoal.achieve.RegistersActivity"  
+              android:screenOrientation="portrait"
+              android:configChanges="orientation"         
+            android:label="@string/app_name" >  
+        </activity>  
+
+        <activity  
+            android:name="com.easygoal.achieve.Activity_Team"  
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/SubAppThemeNoActionBar"
+            android:label="任务共享" >  
+
+        </activity> 
+        <activity  
+            android:name="com.easygoal.achieve.MainActivity_1"  
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/AppThemeNoActionBar">  
+        </activity>  
+        <activity  
+            android:name="com.easygoal.achieve.LoginActivity" 
+            android:theme="@style/AppThemeNoActionBar" 
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+          android:configChanges="orientation"
+            >  
+        </activity> 
+       <activity  
+            android:name="com.easygoal.achieve.FeedbackActivity"  
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+          android:configChanges="orientation"
+            >  
+        </activity> 
+         <activity  
+            android:name="com.easygoal.achieve.Activity_FileOpen"  
+            android:label="@string/app_name" 
+            android:theme="@style/fileAppCompatNoActionBar"
+            android:screenOrientation="portrait"
+          android:configChanges="orientation"
+            >  
+          <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity_1"></meta-data>
+        </activity> 
+        <activity  
+            android:name="com.easygoal.achieve.Activity_BDLocation"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/DialogAppTheme" >
+        </activity>
+
+        <activity
+            android:name=".ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.easygoal.achieve"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.easygoal.achieve"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:exported="true"
+            android:name="SealNotificationReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.easygoal.achieve"
+                    android:pathPrefix="/conversation"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.easygoal.achieve.Activity_ChangeTeam"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/WhiteSubAppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.easygoal.achieve.Activity_Help"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/WhiteSubAppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.easygoal.achieve.Activity_AddTeamMember"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/WhiteSubAppThemeNoActionBar" >
+        </activity>
+        <activity
+            android:name="com.easygoal.achieve.Activity_AddTask"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:theme="@style/BaseAppTheme" >
+        </activity>
+        <activity
+            android:name="com.easygoal.achieve.Activity_Search"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/SubAppThemeNoActionBar"
+            >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity_1">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".SoundIntentService">
+            <intent-filter >
+                <action android:name="com.easygoal.achieve.SoundIntentService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".MusicService">
+            <intent-filter >
+                <action android:name="com.easygoal.achieve.MusicService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
+

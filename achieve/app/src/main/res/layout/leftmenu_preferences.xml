@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+ <TextView  
+              
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp" 
+                android:layout_marginTop="@dimen/topmargin_dialog"
+                
+                android:text="使用设置"/> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"      
+        android:scrollbars="horizontal" >
+        <TextView android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp" 
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:drawableLeft="@drawable/header_arrow"
+                 android:paddingLeft="@dimen/drawablepadding"
+                android:text="开始任务模式"/> 
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">  
+              <RadioGroup
+              
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:orientation="horizontal">
+               <RadioButton
+                android:id="@+id/rb_model1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+              
+                android:text="简易模式" />"
+                <RadioButton
+                android:id="@+id/rb_model2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+                android:checked="true"
+                android:text="标准模式" />
+                
+              </RadioGroup>   
+           </LinearLayout>
+           
+        
+        <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"              
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:drawableLeft="@drawable/header_arrow"
+                 android:paddingLeft="@dimen/drawablepadding"
+                android:text="有效工作时间(小时)"/>   
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">  
+           
+            <SeekBar android:id="@+id/sb_prehour"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="start"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 />
+             <TextView android:id="@+id/tv_prehour"
+                 android:layout_width="60dp"
+                 android:layout_height="wrap_content"
+                 android:gravity="start"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 />
+       </LinearLayout>       
+        
+          <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"              
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:drawableLeft="@drawable/header_arrow"
+                 android:paddingLeft="@dimen/drawablepadding"
+                android:text="停止工作时间"/>  
+                 
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">  
+           
+            <Spinner android:id="@+id/spin_endhour"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:gravity="center"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 />
+            <TextView 
+                 android:layout_width="30dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:gravity="center"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 android:text="时" />
+             <Spinner android:id="@+id/spin_endmin"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.5"
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:gravity="center"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 />
+              <TextView 
+                 android:layout_width="60dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:gravity="start"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 android:text="分" />
+       </LinearLayout>        
+          
+          
+          
+         <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"              
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:drawableLeft="@drawable/header_arrow"
+                 android:paddingLeft="@dimen/drawablepadding"
+                android:text="子任务总权重(%)"/> 
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">  
+           
+            <SeekBar android:id="@+id/sb_preweight"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="start"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 />
+             <TextView android:id="@+id/tv_preweight"
+                 android:layout_width="60dp"
+                 android:layout_height="wrap_content"
+                 android:gravity="start"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="16sp" 
+                 android:text="100%" />
+       </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"              
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginRight="@dimen/margin_right"
+                android:drawableLeft="@drawable/header_arrow"
+                android:paddingLeft="@dimen/drawablepadding"
+                android:text="期限检查/不允许事后输入"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/cb_durationlimit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/margin_right"
+                android:textSize="16sp" 
+              />
+    
+     	 		 <com.easygoal.achieve.SlideSwitch  
+       			 android:id="@+id/sw_durationlimit"  
+       			 android:layout_width="wrap_content"  
+       			 android:layout_height="wrap_content" 
+       			 android:layout_marginLeft="@dimen/margin_left" 
+       			 android:layout_marginRight="@dimen/margin_right"
+       			 android:layout_gravity="end"
+       			 android:visibility="gone"
+        		 />
+        		</LinearLayout>
+       
+     <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp" 
+                 android:layout_marginLeft="@dimen/margin_left"
+                 android:layout_marginTop="@dimen/margin_top"
+                 android:layout_marginBottom="@dimen/margin_bottom"
+                 android:layout_marginRight="@dimen/margin_right"
+                 android:drawableLeft="@drawable/header_arrow"
+                 android:paddingLeft="@dimen/drawablepadding"
+                 android:visibility="gone"
+                android:text="图表数据期限"/> 
+             
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">    
+            <RadioGroup
+              
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="15dp"
+               android:orientation="horizontal">
+               <RadioButton
+                android:id="@+id/rb_period1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:checked="true"
+                android:textSize="16sp"
+                android:text="1个月"/>
+                <RadioButton
+                android:id="@+id/rb_period2"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+       
+                android:text="2个月" />
+                <RadioButton
+                android:id="@+id/rb_period3"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+             
+                android:text="6个月" />
+             </RadioGroup>   
+          </LinearLayout>  
+     </LinearLayout> 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/df_margintop"
+    android:layout_marginBottom="@dimen/df_marginbottom"
+    android:orientation="horizontal">    
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        
+        android:gravity="center"
+        android:text="设置"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+  
+     </LinearLayout>      
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+    
+     
+     <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topmargin_dialog"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:gravity="start"
+        android:text="进度明细"
+        android:textSize="18sp" />
+
+    <LinearLayout
+  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+     <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全部明细(备注)"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textSize="16sp" /> 
+       <TextView
+        android:id="@+id/tv_recorddetails"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"    
+        android:layout_gravity="center_horizontal"
+        android:background="@color/lightgray"  
+        android:textSize="14sp" />
+     
+     <TextView  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加明细"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" /> 
+    <MultiAutoCompleteTextView
+        android:id="@+id/mactv_news"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"  
+        android:background="@color/mistyrose"
+        android:focusable="true"
+        android:inputType="textMultiLine"
+        android:focusableInTouchMode="true"
+        android:textSize="14sp" 
+       >
+        <requestFocus />
+     </MultiAutoCompleteTextView>
+   </LinearLayout>
+   
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">    
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="添加确认"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+  
+     </LinearLayout>
+</LinearLayout>

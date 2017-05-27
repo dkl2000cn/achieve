@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="@android:color/transparent"  
+     >  
+
+        <Button
+         android:id="@+id/reminder_close_bt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+   
+             <TextView  
+                android:id="@+id/tv_reminderheader" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                 android:layout_below="@+id/reminder_close_bt" 
+                android:layout_marginTop="@dimen/margin_top"
+                android:gravity="center" 
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="新建提醒"/> 
+ 
+        <TextView
+        android:id="@+id/tv_remindercreatedtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reminderheader" 
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textSize="14sp" />                 
+    
+<LinearLayout
+    android:id="@+id/ll_inputform"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_remindercreatedtime"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+   
+  
+         <EditText
+        android:id="@+id/et_remindername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:drawableLeft="@drawable/title"
+        android:drawablePadding="5dp"
+        android:hint="@string/remindername"
+        android:layout_margin="0dp"
+        android:textSize="14sp" />
+ 
+         <EditText
+        android:id="@+id/et_reminderdeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/remindertime"
+        android:drawableLeft="@drawable/reminder"
+        android:drawablePadding="5dp"
+        android:layout_margin="0dp"
+        android:textSize="14sp" />
+          
+
+         <EditText
+        android:id="@+id/et_reminderdescription"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_margin="0dp"
+        android:editable="true"
+        android:saveEnabled="true"
+        android:drawableLeft="@drawable/checklist"
+        android:drawablePadding="5dp"
+        android:hint="@string/remindercontent"
+        android:textSize="14sp" />
+ 
+     
+   
+       <LinearLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+       
+          <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/advance"
+           
+            android:visibility="visible" />
+        
+          <TextView  
+               
+                android:layout_width="30dp"  
+                android:layout_height="wrap_content"
+                android:textSize="14sp" 
+                android:layout_marginLeft="10dp"
+                 android:visibility="visible"
+            
+                android:text="提前"/> 
+        <EditText
+        android:id="@+id/et_reminderadvance"  
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_margin="0dp"  
+        android:gravity="center"
+        android:textSize="14sp" />
+             <TextView  
+               
+                android:layout_width="60dp"  
+                android:layout_height="wrap_content"
+                android:textSize="14sp" 
+                android:text="分钟"/> 
+                          
+    </LinearLayout>            
+   
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+               <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp" 
+            
+                 android:visibility="visible"
+                 android:background="@drawable/frequency"
+               
+              />  
+              <TextView                
+                android:layout_width="30dp"  
+                android:layout_height="wrap_content"
+                android:textSize="14sp" 
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:text="频率"/> 
+          
+       <Spinner
+        android:id="@+id/spin_reminderfreq"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_margin="0dp"
+        android:text="一次(默认)"
+        android:textSize="14sp" /> 
+         <TextView  
+               
+                android:layout_width="30dp"  
+                android:layout_height="wrap_content"
+                android:textSize="14sp" 
+                android:gravity="center"
+                android:text="间隔"/> 
+         <EditText
+        android:id="@+id/et_reminderinterval"  
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_margin="0dp" 
+        android:gravity="center"  
+        android:textSize="14sp" />
+          <TextView  
+               
+                android:layout_width="30dp"  
+                android:layout_height="wrap_content"
+                android:textSize="14sp" 
+                android:text="分钟"/> 
+         </LinearLayout>
+         
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_inputform"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+
+    <Button
+        android:id="@+id/reminder_confirm_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom" 
+        android:layout_weight="0.3"
+        android:text="设置"
+        android:background="@color/tan"
+        android:textSize="14sp" />
+  
+     <Button
+        android:id="@+id/reminder_cancel_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom" 
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="14sp" />
+     
+      
+    </LinearLayout>
+</RelativeLayout> 

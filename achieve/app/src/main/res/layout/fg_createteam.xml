@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="start"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/teamicon_32px"
+                android:drawablePadding="5dp"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_teamname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_teamMemberCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_right"
+                android:text="未刷新"
+                android:textColor="@color/darkorange"
+                android:gravity="center"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_teamname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_gravity="center_vertical"
+                android:hint="团队名称"
+                android:visibility="gone"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_refreshteam"
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/refreshteam_32px"
+                android:visibility="gone"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_addmember"
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/addmember_32px"
+                android:visibility="visible"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/chat_32px"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/call_32px"
+                android:textSize="14sp" />
+            <Spinner
+                android:id="@+id/spin_team"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="end"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="@dimen/imgbtn_width"
+                    android:layout_height="@dimen/imgbtn_height"
+                    android:layout_marginRight="@dimen/imgbtn_padding"
+                    android:background="@drawable/addrecord"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="13sp" />
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="@dimen/imgbtn_width"
+                    android:layout_height="@dimen/imgbtn_height"
+                    android:layout_marginRight="@dimen/imgbtn_padding"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/update"
+                    android:textSize="13sp" />
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="@dimen/imgbtn_width"
+                    android:layout_height="@dimen/imgbtn_height"
+                    android:layout_marginRight="@dimen/imgbtn_padding"
+                    android:layout_gravity="center"
+                    android:background="@drawable/delete"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mTextColor7"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="left|start"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="头像"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:text="成员"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="手机号"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="团队角色"
+                android:visibility="gone"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="用户类型"
+                android:textSize="14sp" />
+        </LinearLayout>
+     <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabhostHeightWithRefresh"
+        android:background="#ffffff" >
+        <ListView
+            android:id="@+id/lv_teammember"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:tag="show"
+            android:scrollbars="vertical" />
+     </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

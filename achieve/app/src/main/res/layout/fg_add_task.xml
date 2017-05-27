@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical" >
+  
+   <TextView  
+                android:id="@+id/tv_newtaskheader"  
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:gravity="center" 
+                android:text="新建任务"/> 
+     <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3">
+       <TextView  
+                android:id="@+id/tv_newtaskTitle1"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:textSize="10sp"
+                android:text="任务描述"/> 
+    
+         <EditText
+        android:id="@+id/task_item1_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:editable="true"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+         <EditText
+        android:id="@+id/task_item3_description_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:editable="true"
+        android:saveEnabled="true"
+        android:text="description"
+        android:textSize="7sp" />
+    <TextView  
+                android:id="@+id/tv_newtaskTitle2"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:textSize="10sp"
+                android:text="任务优先级"/>   
+    <TableRow>
+                
+    <EditText
+        android:id="@+id/task_item4_importance_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="importance"
+        android:textSize="7sp" />
+    
+    <EditText
+        android:id="@+id/task_item5_urgency_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="urgency"
+        android:textSize="7sp" />
+     <EditText
+        android:id="@+id/task_item6_assess_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="assess"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+     
+     <EditText
+        android:id="@+id/task_item7_priority_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="priority"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+      </TableRow>
+      <TextView  
+                android:id="@+id/tv_newtaskTitle3"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                android:textSize="10sp" 
+                android:text="任务兴趣度"/>  
+       <TableRow>
+    <EditText
+        android:id="@+id/task_item8_passion_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="passion"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+    
+    <EditText
+        android:id="@+id/task_item9_difficulty_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="difficulty"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+    
+    
+   
+     </TableRow>
+          
+     <TextView  
+                android:id="@+id/tv_newtaskTitle5"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:textSize="10sp"
+                android:text="任务进度"/>
+      <TableRow>
+           
+     <EditText
+        android:id="@+id/task_item14_startedtime_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="startedtime"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+       <EditText
+        android:id="@+id/task_item15_deadline_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="deadline"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+        <EditText
+        android:id="@+id/task_item10_duration_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="duration"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+        <EditText
+        android:id="@+id/task_item16_progress_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="60%"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+        </TableRow>
+          <TextView  
+                android:id="@+id/tv_newtaskTitle6"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:textSize="10sp"
+                android:text="任务状态"/>
+        <TableRow>
+        <EditText
+        android:id="@+id/task_item17_reminder_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="reminder"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+        <EditText
+        android:id="@+id/task_item18_status_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+        <EditText
+        android:id="@+id/task_item19_finished_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finished"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+          <EditText
+        android:id="@+id/task_item20_delayed_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delayed"
+        android:layout_margin="0dp"
+        android:textSize="7sp" /> 
+       </TableRow>
+        <TextView  
+                android:id="@+id/tv_newtaskTitle4"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:textSize="10sp"
+                android:text="任务成就"/>  
+      <TableRow>
+      <EditText
+        android:id="@+id/task_item11_achieved_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="achieved"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+       <EditText
+        android:id="@+id/task_item12_enjoyment_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="enjoyment"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+       <EditText
+        android:id="@+id/task_item13_experience_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="experience"
+        android:layout_margin="0dp"
+        android:textSize="7sp" />
+     </TableRow>
+        
+        
+      </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+
+    <Button
+        android:id="@+id/task_confirm_bt"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:text="confirm"
+        android:textSize="7sp" />
+     <Button
+        android:id="@+id/task_delete_bt"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:text="delete"
+        android:textSize="7sp" />
+       <Button
+        android:id="@+id/task_update_bt"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:text="update"
+        android:textSize="7sp" />
+         <Button
+        android:id="@+id/task_clear_bt"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:text="clear"
+        android:textSize="7sp" />
+         <Button
+        android:id="@+id/add_comments_bt"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_margin="0dp"
+        android:text="addcomments"
+        android:textSize="7sp" />
+</LinearLayout>
+  
+    
+</LinearLayout>

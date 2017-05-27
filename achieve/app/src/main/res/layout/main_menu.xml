@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.easygoal.achieve.MainActivity_1" >
+
+     
+    
+      <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="90"
+    
+        android:icon="@drawable/addgoal_white"
+        
+        android:title="新建"/>
+    <item  
+        android:id="@+id/action_settings4"  
+        android:icon="@drawable/share4" 
+         android:orderInCategory="100" 
+                
+        android:title="分享"/>  
+    <item  
+        android:id="@+id/action_settings2"  
+        android:icon="@drawable/setting32px"  
+       
+        android:orderInCategory="80"
+        android:title="设置"/>  
+    
+ 
+        <item  
+        android:id="@+id/action_settings6"  
+        android:icon="@drawable/setting"  
+         android:orderInCategory="80"  
+        
+        android:title="帮助"/>
+        <item  
+        android:id="@+id/action_settings7"  
+        android:icon="@drawable/setting"
+         android:orderInCategory="80"    
+       
+        android:title="关于"/>
+         <item  
+        android:id="@+id/action_settings8"  
+        android:icon="@drawable/setting"  
+         android:orderInCategory="80"  
+      
+        android:title="反馈"/>
+          <item  
+        android:id="@+id/action_settings9"  
+        android:icon="@drawable/setting"  
+         android:orderInCategory="80"  
+      
+        android:title="赞助"/>
+           <item  
+        android:id="@+id/action_settings10"  
+        android:icon="@drawable/setting"  
+         android:orderInCategory="80"  
+        
+        android:title="退出"/>
+</menu>
