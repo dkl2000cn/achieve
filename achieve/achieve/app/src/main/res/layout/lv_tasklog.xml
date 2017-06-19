@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+
+    <TextView
+        android:id="@+id/log_item1_day_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="day"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/log_item5_dayachieved_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/log_item6_dayenjoyment_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/log_item7_dayexperience_tv"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="high"
+        android:textSize="6sp" />
+ 
+</LinearLayout>

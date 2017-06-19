@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/topborder">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        >
+        <Button
+            android:id="@+id/task_view_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/view"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="13sp" />
+    </LinearLayout>
+     <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            >
+         <Button
+             android:id="@+id/task_addrecord_bt"
+             android:layout_width="@dimen/imgbtn_width"
+             android:layout_height="@dimen/imgbtn_height"
+             android:layout_marginLeft="@dimen/margin_left"
+             android:layout_marginRight="@dimen/margin_right"
+             android:layout_gravity="center_horizontal"
+             android:gravity="center"
+             android:focusable="false"
+             android:background="@drawable/addrecord"
+             android:textSize="14sp" />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+              android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="添加进度"
+            android:textSize="13sp" />
+     </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        >
+        <Button
+            android:id="@+id/task_update_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/update"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="刷新"
+            android:textSize="13sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            >
+           <Button
+            android:id="@+id/task_delete_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+               android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/delete"
+            android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            >
+
+        <Button
+            android:id="@+id/task_clear_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@drawable/clear"
+            android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="清空"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        >
+    <Button
+        android:id="@+id/export_bt"
+        android:layout_width="@dimen/imgbtn_width"
+        android:layout_height="@dimen/imgbtn_height"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:focusable="false"
+        android:background="@drawable/export"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="导出"
+        android:textSize="13sp" />
+</LinearLayout>
+</LinearLayout>

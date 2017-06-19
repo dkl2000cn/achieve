@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fastScrollEnabled="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+         <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+              <ImageView 
+                 android:id="@+id/iv_userpic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_gravity="center"
+              />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@color/mediumorchid"
+        android:text="点击换头像"
+        />
+
+    <TextView
+                android:id="@+id/tv_phoneNo"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+               
+               
+                /> 
+       
+        <TextView  
+                android:id="@+id/tv_online"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/darkgreen"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                /> 
+        
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+     <LinearLayout
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="vertical" >
+               
+       
+          <TextView  
+               
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户ID"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/> 
+               
+       <TextView  
+               
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户名"
+                android:background="@color/mistyrose"/> 
+        <TextView  
+               
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="昵称"
+                android:background="@color/mistyrose"/>
+         <TextView
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:textSize="16sp"
+             android:layout_marginLeft="10dp"
+             android:paddingLeft="2dp"
+             android:paddingRight="2dp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:text="团队"
+             android:background="@color/mistyrose"/>
+         <TextView
+               
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户类型"
+                android:background="@color/mistyrose"/>   
+               
+                <TextView  
+                
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户积分"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/> 
+                   <TextView  
+              
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户等级"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/>  
+               
+                 <TextView  
+              
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="登录次数"
+                android:background="@color/mistyrose"/>             
+               <TextView  
+               
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="最新登录"
+                android:background="@color/mistyrose"/>    
+     </LinearLayout>    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="vertical" >
+                   
+       <TextView  
+                android:id="@+id/tv_userId"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户ID"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/> 
+     
+       <TextView  
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="用户名"
+                android:background="@color/mistyrose"/> 
+        <TextView  
+                android:id="@+id/tv_usernickname"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="昵称"
+                android:background="@color/mistyrose"/>  
+                 <TextView  
+                android:id="@+id/tv_organization"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"/>
+         <TextView
+             android:id="@+id/tv_usertype"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:textSize="16sp"
+             android:layout_marginLeft="10dp"
+             android:paddingLeft="2dp"
+             android:paddingRight="2dp"
+             android:paddingTop="2dp"
+             android:paddingBottom="2dp"
+             android:text="用户类型"
+             android:background="@color/mistyrose"/>
+         <TextView
+                android:id="@+id/tv_usercredit"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户积分"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/> 
+                 <TextView  
+                android:id="@+id/tv_usergrade"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="用户等级"
+                android:visibility="gone"
+                android:background="@color/mistyrose"/>  
+               
+                 <TextView  
+                android:id="@+id/tv_userlogintimes"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="登录次数"
+                android:background="@color/mistyrose"/>             
+               <TextView  
+                android:id="@+id/tv_userlastlogintime"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="最新登录"
+                android:background="@color/mistyrose"/>  
+          
+    </LinearLayout>
+    
+   </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/df_margintop"
+    android:layout_marginBottom="@dimen/df_marginbottom"
+    android:orientation="horizontal"> 
+    <Button
+        android:id="@+id/btn_editnickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="修改昵称"
+        android:background="@color/tan"
+        android:textSize="16sp" />   
+    <Button
+        android:id="@+id/btn_editpwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="修改密码"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_editorg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_right"
+            android:gravity="center"
+            android:text="修改团队"
+            android:background="@color/mediumorchid"
+            android:visibility="gone"
+            android:textSize="16sp" />
+    
+       <Button
+           android:id="@+id/btn_applymembership"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.2"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_marginRight="@dimen/margin_right"
+           android:paddingBottom="2dp"
+           android:paddingLeft="2dp"
+           android:paddingRight="2dp"
+           android:paddingTop="2dp"
+           android:background="@color/mediumorchid"
+           android:text="申请VIP"
+           android:textSize="16sp" />
+  
+     </LinearLayout>
+  
+</LinearLayout>

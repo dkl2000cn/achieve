@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+             android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                
+               
+                android:background="@drawable/selector_tasktab"
+                android:drawableLeft="@drawable/message"
+                
+                android:button="@null"
+                android:checked="true"
+                
+                android:drawablePadding="@dimen/drawablepadding"
+                android:paddingLeft="@dimen/marginleft_rb"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+            android:text="团队一览"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:layout_weight="0.25"
+                android:layout_gravity="bottom"
+               
+                android:background="@drawable/selector_tasktab"
+                android:drawableLeft="@drawable/calendar"
+                android:button="@null"
+                
+                android:drawablePadding="@dimen/drawablepadding"
+                android:paddingLeft="@dimen/marginleft_rb"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+            android:text="团队大事"
+            android:textSize="16sp"/>
+           <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:layout_weight="0.25"
+                android:layout_gravity="bottom"
+                android:drawableLeft="@drawable/memo"
+            
+                android:background="@drawable/selector_tasktab"
+                android:button="@null"
+                
+                android:drawablePadding="@dimen/drawablepadding"
+                android:paddingLeft="@dimen/marginleft_rb"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+            android:text="团队备忘"
+            android:textSize="16sp"/>
+           <RadioButton
+            android:id="@+id/radio3"
+             android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                 android:layout_weight="0.25"
+                
+                android:drawableLeft="@drawable/reminder"
+             
+                android:background="@drawable/selector_tasktab"
+                android:button="@null"          
+                
+                android:drawablePadding="@dimen/drawablepadding"
+                android:paddingLeft="@dimen/marginleft_rb"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+            android:text="团队提醒"
+            android:textSize="16sp"/>
+          
+    </RadioGroup>
+ <LinearLayout
+                    android:id="@+id/sublayout_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                   </LinearLayout>
+</LinearLayout>

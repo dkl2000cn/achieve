@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <Button
+         android:id="@+id/btn_closewin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:background="@drawable/closewin"
+         android:minHeight="32dip"
+         android:minWidth="32dp" />
+ <TextView  
+              
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp" 
+                android:layout_marginTop="@dimen/topmargin_dialog"
+                android:text="提醒方式"/> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"      
+        android:scrollbars="horizontal" >
+                
+          <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+                android:text="系统闹钟(默认)" />
+ 
+            <CheckBox android:id="@+id/cb2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                 android:textSize="16sp" 
+                 android:text="振动" />
+ 
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:textSize="16sp" 
+                android:text="响铃" />
+               <CheckBox
+                android:id="@+id/cb4"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="10dp"
+                 android:textSize="16sp" 
+                 android:text="消息推送" />
+               
+               
+               
+             <LinearLayout      
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"      
+                android:scrollbars="horizontal" > 
+               
+                 <TextView
+                  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="默认提醒频率"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp" />   
+                
+              <RadioGroup
+              
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" 
+               android:orientation="horizontal">
+               <RadioButton
+                android:id="@+id/rb_freq1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+              
+                android:text="一次" />
+                <RadioButton
+                android:id="@+id/rb_freq2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp" 
+              
+                android:text="重复" />
+                
+              </RadioGroup>      
+             </LinearLayout>   
+             
+                <LinearLayout      
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"      
+                android:scrollbars="horizontal" >
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="默认提前时间"
+                android:textSize="16sp" />
+             <EditText
+                android:id="@+id/et_advance" 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:hint="0"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp" />
+                 <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="分钟"
+                android:textSize="16sp" />
+            </LinearLayout>   
+              <LinearLayout      
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"       
+              >
+             <TextView
+                  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="默认提醒间隔"
+                android:textSize="16sp" />
+             <EditText
+                android:id="@+id/et_alarminterval" 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:hint="5"
+                android:textSize="16sp" />
+               <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="分钟"
+                android:textSize="16sp" />
+            </LinearLayout>   
+            
+       
+        </LinearLayout> 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/df_margintop"
+    android:layout_marginBottom="@dimen/df_marginbottom"
+    android:orientation="horizontal">    
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+     
+        android:gravity="center"
+        android:text="设置"
+        android:background="@color/tan"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="取消"
+        android:background="@color/gray"
+        android:textSize="16sp" />
+  
+     </LinearLayout>      
+</LinearLayout>

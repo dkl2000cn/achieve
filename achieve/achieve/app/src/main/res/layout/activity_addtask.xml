@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/layout_addtask"></include>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/model1_task_item2_createdtime_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/model1_ll_inputform"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/listpadding_top"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical" >
+                        <EditText
+                            android:id="@+id/model1_taskname_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:drawableLeft="@drawable/title"
+
+                            android:drawablePadding="5dp"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginRight="@dimen/margin_right"
+                            android:hint="目标名称"
+                            android:textSize="14sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" >
+                            <TextView
+
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+
+                                android:layout_marginTop="@dimen/listpadding_top"
+                                android:layout_marginBottom="@dimen/listpadding_bottom"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/time"
+                                android:layout_marginLeft="@dimen/margin_left"
+
+                                android:textSize="14sp" />
+                            <Spinner
+                                android:id="@+id/model_task_item15_deadline_spin"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="选项输入"
+
+
+                                android:textSize="14sp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_left"
+                                android:gravity="center"
+
+                                android:text="截至"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/model1_task_item15_deadline_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_left"
+                                android:background="@color/mTextColor2"
+                                android:gravity="center"
+                                android:text="选择完成时间"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/model1_checklist_et"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:layout_margin="0dp"
+                                android:hint="子目标或内容(可添加)"
+                                android:drawableLeft="@drawable/checklist"
+                                android:drawablePadding="5dp"
+                                android:layout_marginLeft="@dimen/margin_left"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/model1_taskadd_btn"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginRight="@dimen/margin_right"
+                                android:layout_marginTop="@dimen/listpadding_top"
+                                android:layout_marginBottom="@dimen/listpadding_bottom"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/additem"
+                                android:drawablePadding="5dp"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:scrollbars="vertical" >
+
+                            <LinearLayout
+                                android:layout_height="0dp"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">"
+
+                                <TextView
+
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+
+                                    android:layout_marginBottom="@dimen/listpadding_bottom"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/listitem"
+                                    android:layout_marginLeft="@dimen/margin_left"
+
+                                    android:textSize="14sp" />
+                                <ListView
+                                    android:id="@+id/lv_quickinput"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:descendantFocusability="blocksDescendants"
+                                    android:scrollbars="vertical"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:layout_gravity="top"
+                                    android:textSize="14sp"
+                                    >
+                                </ListView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:scrollbars="horizontal" >
+
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="预计用时"
+                                    android:textSize="14sp" />
+
+                                <EditText
+                                    android:id="@+id/model1_duration_et"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:gravity="center"
+                                    android:textSize="14sp" />
+
+                                <Spinner
+                                    android:id="@+id/model1_timeunit_spin"
+                                    android:layout_width="@dimen/spinner_width"
+                                    android:layout_height="@dimen/spinner_height"
+                                    android:layout_margin="0dp"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:orientation="horizontal"
+                                android:scrollbars="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_left"
+                                    android:text="添加提醒"
+                                    android:drawableLeft="@drawable/reminder"
+                                    android:drawablePadding="5dp"
+                                    android:textSize="14sp" />
+
+                                <CheckBox
+                                    android:id="@+id/model1_reminder_cb"
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:checked="false"
+                                    android:gravity="center"
+                                    android:text="YES"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal" >
+
+                        <Button
+                            android:id="@+id/model1_task_confirm_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_weight="0.3"
+                            android:background="@color/tan"
+                            android:text="保存"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/model1_task_cancel_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginRight="@dimen/margin_right"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_weight="0.3"
+                            android:background="@color/gray"
+                            android:text="取消"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/task_item2_createdtime_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_inputform"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/listpadding_top"
+                        android:orientation="vertical"
+                        android:scrollbars="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_newtaskstep1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/titlecolor_dialog"
+                            android:text="  S1:定义目标/任务"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskname"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="目标名称"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/task_item1_name_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:editable="true"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskdeadline"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="最后期限"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/task_item15_deadline_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:text=""
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskdescription"
+                                android:layout_width="60dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="目标概要"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/task_item3_description_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_margin="0dp"
+                                android:editable="true"
+                                android:hint="(可选)"
+                                android:saveEnabled="true"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/tv_newtaskstep2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/titlecolor_dialog"
+                            android:text="  S2:目标/任务评估"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskimportance"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="重要程度"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/task_item4_importance_spin"
+                                android:layout_width="120dp"
+                                android:layout_height="36dp"
+                                android:layout_margin="0dp"
+                                android:text="importance"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remark1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="*影响成就值"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskurgency"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="紧急程度"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/task_item5_urgency_spin"
+                                android:layout_width="120dp"
+                                android:layout_height="36dp"
+                                android:layout_margin="0dp"
+                                android:text="urgency"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remark2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="*影响优先级"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskdifficulty"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="困难程度"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/task_item9_difficulty_spin"
+                                android:layout_width="120dp"
+                                android:layout_height="36dp"
+                                android:layout_margin="0dp"
+                                android:text="difficulty"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remark3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="*影响经验值"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskpassion"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="兴趣程度"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/task_item8_passion_spin"
+                                android:layout_width="120dp"
+                                android:layout_height="36dp"
+                                android:layout_margin="0dp"
+                                android:text="passion"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_remark4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="*影响快乐值"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/titlecolor_dialog"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskstep3"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="  S3:目标/任务计划"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="可用天数"
+                                android:visibility="gone"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_maxAvailDays"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text=""
+                                android:visibility="gone"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:text="可用时数"
+                                android:visibility="gone"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_maxAvailHrs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text=""
+                                android:visibility="gone"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbars="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_newtaskstartime"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="开始时间"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/task_item14_startedtime_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:hint="立刻(默认)"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="horizontal"
+                            android:scrollbars="horizontal" >
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="@dimen/spinner_height"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical"
+                                android:text="预计用时"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/task_item10_duration_et"
+                                android:layout_width="80dp"
+                                android:layout_height="@dimen/spinner_height"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="14sp" />
+
+                            <Spinner
+                                android:id="@+id/timeunit_spin"
+                                android:layout_width="60dp"
+                                android:layout_height="@dimen/spinner_height"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_maxvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spinner_height"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="horizontal"
+                            android:scrollbars="horizontal" >
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="添加提醒"
+                                android:textSize="14sp" />
+
+                            <CheckBox
+                                android:id="@+id/task_item17_reminder_cb"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:checked="false"
+                                android:gravity="center"
+                                android:text="YES"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal" >
+
+                        <Button
+                            android:id="@+id/task_confirm_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_weight="0.3"
+                            android:background="@color/tan"
+                            android:text="确认"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/task_cancel_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_marginRight="@dimen/margin_right"
+                            android:layout_marginBottom="@dimen/margin_bottom"
+                            android:layout_weight="0.3"
+                            android:background="@color/gray"
+                            android:text="取消"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+     
+   
+</LinearLayout> 

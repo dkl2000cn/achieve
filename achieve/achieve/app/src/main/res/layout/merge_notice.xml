@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+       <ViewFlipper
+        android:id="@+id/vf_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/mistyrose"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/anim_marquee_in"
+        android:outAnimation="@anim/anim_marquee_out"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="5dp" >
+       </ViewFlipper>
+       <CheckBox
+        android:id="@+id/cb_tip"
+        android:layout_width="@dimen/imgbtn_width"
+        android:layout_height="@dimen/imgbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_noticeitem48px"
+        android:button="@null"
+        android:textSize="12sp" />
+    </LinearLayout>
+ </merge>

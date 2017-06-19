@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>  
+    <dbname value="easygoal" ></dbname>  
+  
+    <version value="1" ></version>  
+  
+    <list>  
+        <mapping class="com.easygoal.achieve.Memo"></mapping>  
+         <mapping class="com.easygoal.achieve.Reminder"></mapping>  
+          <mapping class="com.easygoal.achieve.UserBean"></mapping>  
+          <mapping class="com.easygoal.achieve.UserRatingBean"></mapping> 
+    </list>  
+   
+</litepal>  

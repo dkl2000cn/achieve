@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.easygoal.achieve.MainActivity_1" >
+    
+         <TextView
+             android:id="@+id/tv_curday"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="60dp"
+             android:textColor="@color/orange"
+             android:text="当前时间"
+             android:textSize="28sp" />
+    
+          
+         
+         
+         <TextView
+             android:id="@+id/tv_curtime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_curday"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:textColor="@color/mediumorchid"
+             android:text="当前时间"
+             android:textSize="60sp" />
+    
+             
+          <TextView
+             android:id="@+id/tv_timeout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_marginTop="20dp"
+             android:background="@color/red"
+             android:text="TIME OUT!"
+             android:textSize="24sp" />
+
+        <TextView
+             android:id="@+id/tv_alarmName"
+             android:layout_width="160dp"
+             android:layout_height="36dp"
+             android:layout_below="@+id/tv_curtime"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:ellipsize="marquee"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:gravity="center|center_vertical"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:singleLine="true"
+             android:text="AlarmName"
+             android:textSize="20sp" />
+
+        
+
+         <TextView
+             android:id="@+id/tv_close"
+             android:layout_width="160dp"
+             android:layout_height="36dp"
+             android:layout_below="@+id/tv_timeout"
+             android:layout_marginTop="80dp"
+             android:background="@drawable/shape_line_btn_purple"
+             android:layout_marginLeft="10dp"
+             android:gravity="center|center_vertical"
+             android:text="知道了"
+             android:textSize="18sp" />
+
+          <TextView
+              android:id="@+id/tv_cancel"
+              android:layout_width="160dp"
+              android:layout_height="36dp"
+              android:layout_alignBaseline="@+id/tv_close"
+              android:layout_alignBottom="@+id/tv_close"
+              android:layout_toRightOf="@+id/tv_close"
+               android:layout_marginLeft="10dp"
+              android:background="@drawable/shape_line_btn_white"
+              android:gravity="center|center_vertical"
+              android:text="取消闹钟"
+              android:textSize="18sp" />
+    
+</RelativeLayout>

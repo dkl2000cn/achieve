@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mTextColor2"  
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+
+    <TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="name"
+        android:textSize="12sp" />
+     <TextView
+        android:id="@+id/task_item_accomplished_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="achieved"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/task_item11_achieved_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text="achieved"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item13_experience_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="experience"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item12_enjoyment_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="enjoyment"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp" />
+
+    
+
+    <Button
+        android:id="@+id/taskscore_bt"
+        android:layout_width="@dimen/imgbtn_width"
+        android:layout_height="@dimen/imgbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/listpadding_top"
+        android:layout_marginBottom="@dimen/listpadding_bottom"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/more"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

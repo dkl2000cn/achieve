@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" 
+    android:background="@color/mTextColor2">    
+    
+    <TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_gravity="center_vertical"
+        android:text="name"
+        android:textSize="12sp" />
+   <TextView
+        android:id="@+id/task_item7_priority_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="12sp" />
+  
+   <TextView
+        android:id="@+id/task_item15_deadline_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+      
+         android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="deadline"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/task_item16_progress_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="12sp" />
+   
+   
+  <Button
+        android:id="@+id/taskdetails_btn"
+        android:layout_width="@dimen/listbtn_width"
+        android:layout_height="@dimen/listbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/listpadding_top"
+        android:layout_marginBottom="@dimen/listpadding_bottom"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:gravity="center"
+        android:background="@drawable/more"
+        />
+    
+  
+</LinearLayout>

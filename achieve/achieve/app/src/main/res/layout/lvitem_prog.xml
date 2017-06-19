@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/list_margintop"
+    android:orientation="horizontal" >
+    
+     <TextView
+        android:id="@+id/tv_taskid_no"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"       
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="12sp" />
+     
+        <CheckBox
+        android:id="@+id/cb_recordcomments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:lineSpacingMultiplier="1.25"
+        android:clickable="true"
+        android:textSize="12sp" />
+        <TextView
+        android:id="@+id/tv_recordprocess"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_vertical"      
+        android:gravity="center"
+        android:textSize="12sp" />  
+        <CheckBox
+        android:id="@+id/cb_newflag"
+        android:layout_width="@dimen/listbtn_width"
+        android:layout_height="@dimen/listbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/selector_newflag"
+        android:button="@null"
+        android:layout_gravity="center_vertical" 
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"    
+        android:gravity="center"
+        android:clickable="false"
+        android:textSize="12sp" />  
+        <Button
+        android:id="@+id/btn_addnews"
+         android:layout_width="@dimen/listbtn_width"
+        android:layout_height="@dimen/listbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/addnews_32px"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="12sp" />   
+     </LinearLayout>   
+     <TextView
+        android:id="@+id/tv_recorddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/marginleft_progrecorddetail"
+        android:layout_marginRight="@dimen/marginright_progrecorddetail"
+        android:layout_gravity="center_vertical"      
+        android:gravity="start"
+        android:textSize="12sp" />  
+</LinearLayout>

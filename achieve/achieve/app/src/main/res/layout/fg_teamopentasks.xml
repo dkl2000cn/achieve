@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+     android:focusable="false"
+    android:orientation="vertical" >
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+          <TextView  
+                android:id="@+id/tv_opentaskscount"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left" 
+                android:drawableLeft="@drawable/list"
+                android:drawablePadding="4dp"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_left"
+               />
+
+         <include layout="@layout/layout_toolbox"
+             ></include>
+    </LinearLayout>   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFCCCC"
+    android:gravity="left|start"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+ 
+   <TextView
+        android:id="@+id/taskheader1_tv"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="@string/goal"
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp" />
+     <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/priority"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+         android:visibility="gone"
+        android:textSize="13sp" />
+   <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+          android:text="@string/classify"
+          android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+
+   <TextView
+        android:id="@+id/taskheader3_tv"
+         android:layout_width="60dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="期限"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/taskheader4_tv"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"      
+        android:text="完成%"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="13sp" />
+     <TextView
+               
+                android:layout_width="@dimen/imgbtn_width"
+                android:layout_height="@dimen/imgbtn_height"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="@dimen/listpadding_top"
+                android:layout_marginBottom="@dimen/listpadding_bottom"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/tree_32px"
+                
+                android:textSize="14sp" />
+        <TextView
+        android:id="@+id/taskheader5_tv"
+        android:layout_width="@dimen/listbtn_width"
+        android:layout_height="@dimen/listbtn_height"
+        android:layout_marginRight="@dimen/margin_right"
+        android:gravity="center"
+        android:text="详细"
+        android:visibility="gone"
+        android:textSize="13sp" />  
+    
+  </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tabhostHeightWithRefresh"
+        android:background="#ffffff" >
+
+    <com.easygoal.achieve.mListView
+     android:id="@+id/opentasks_lv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:descendantFocusability="blocksDescendants"
+     android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+    />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+  
+</LinearLayout>

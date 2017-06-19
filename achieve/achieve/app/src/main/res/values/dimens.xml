@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+ <!-- 日历边框 -->
+ <dimen name="calendar_border_margin">0dp</dimen>
+
+ <!-- 日历周名 -->
+ <dimen name="weekname_size">14dp</dimen>
+ <dimen name="weekname_margin">8dp</dimen>
+ <dimen name="day_size">18dp</dimen>
+ <dimen name="action_size">12dp</dimen>
+ <dimen name="day_top_offset">16dp</dimen>
+    
+     <dimen name="imgbtn_width">24dp</dimen>
+     <dimen name="imgbtn_height">24dp</dimen>
+     <dimen name="memoimg_width">128dp</dimen>
+     <dimen name="memoimg_height">96dp</dimen>
+     <dimen name="imgbtn_padding">8dp</dimen>
+      
+      <dimen name="listbtn_height">24dp</dimen>
+      <dimen name="listbtn_width">24dp</dimen>
+      <dimen name="listpadding_top">5dp</dimen>
+      <dimen name="listpadding_bottom">5dp</dimen>  
+      <dimen name="list_margintop">2dp</dimen>
+      <dimen name="list_marginbottom">2dp</dimen> 
+    
+     <dimen name="loginbtn_marginleft">20dp</dimen>
+     <dimen name="loginbtn_marginright">20dp</dimen>
+     <dimen name="loginbtn_margintop">20dp</dimen>
+     <dimen name="loginbtn_height">32dp</dimen>
+     <dimen name="loginbtn_margin">10dp</dimen>    
+      
+     <dimen name="registerbtn_marginleft">20dp</dimen>
+     <dimen name="registerbtn_marginright">20dp</dimen>
+     <dimen name="registerbtn_margintop">20dp</dimen>
+     <dimen name="registerbtn_height">32dp</dimen>
+     <dimen name="registerbtn_margin">10dp</dimen>    
+     
+     <dimen name="margin_left">6dp</dimen>
+     <dimen name="margin_right">6dp</dimen>
+     <dimen name="margin_top">5dp</dimen>
+     <dimen name="margin_bottom">5dp</dimen>
+     
+     <dimen name="df_margintop">20dp</dimen>
+     <dimen name="df_marginbottom">10dp</dimen>
+     <dimen name="topmargin_dialog">5dp</dimen>
+     <dimen name="bottommargin_dialog">10dp</dimen>
+      
+     <dimen name="titletextsize">16dp</dimen>
+     <dimen name="contenttextsize">14dp</dimen>
+     
+
+     <dimen name="marginleft_rb">10dp</dimen>
+     
+     <dimen name="drawablepadding">3dp</dimen>
+     
+     <dimen name="tabhostheight">56dp</dimen>
+     <dimen name="tabhostHeightWithRefresh">56dp</dimen>
+     <dimen name="treeimgbtn_width">22dp</dimen>
+     <dimen name="treeimgbtn_height">22dp</dimen>
+     
+     <dimen name="spinner_height">32dp</dimen>
+     <dimen name="spinner_width">80dp</dimen>
+     
+     <dimen name="marginleft_lvreview">22dp</dimen>
+     
+      <dimen name="marginleft_progrecorddetail">36dp</dimen>
+      <dimen name="marginright_progrecorddetail">60dp</dimen>
+      
+      <dimen name="marginleft_viewrecorddetail">28dp</dimen>
+      <dimen name="marginright_viewrecorddetail">100dp</dimen>
+      
+      <dimen name="marginleft_taskrecorddetail">24dp</dimen>
+      <dimen name="marginright_taskrecorddetail">75dp</dimen>
+      
+</resources>

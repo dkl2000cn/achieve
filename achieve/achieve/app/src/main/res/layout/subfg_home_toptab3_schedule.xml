@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+     android:focusable="false"
+    android:orientation="vertical" >
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:orientation="horizontal" >
+
+  
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="end"
+         android:layout_marginRight="1dp"
+         android:gravity="end"
+         android:orientation="horizontal" >
+
+       <Button
+        android:id="@+id/btn_eventadd"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/addrecord"
+        android:textSize="13sp" />
+         <Button
+        android:id="@+id/btn_eventupdate"
+       android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="4dp"
+         android:background="@drawable/update"
+        android:textSize="13sp" />
+     <Button
+        android:id="@+id/btn_eventdelete"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/delete"
+        android:textSize="13sp" />
+         <Button
+        android:id="@+id/btn_eventclear"
+       android:layout_width="24dp"
+        android:layout_height="24dp"     
+        android:layout_marginRight="4dp"  
+        android:background="@drawable/clear"
+        android:textSize="13sp" />
+</LinearLayout>   
+</LinearLayout>   
+  
+ <ListView
+     android:id="@+id/lv_reminder"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="60dp"
+     android:layout_marginTop="5dp"
+
+     android:descendantFocusability="blocksDescendants"
+     android:scrollbars="vertical"
+     android:tag="show" >
+
+    </ListView>
+      
+</LinearLayout>

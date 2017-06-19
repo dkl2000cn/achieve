@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <merge xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:gravity="end"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/task_addrecord_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginRight="@dimen/imgbtn_padding"
+            android:background="@drawable/addrecord"
+            android:layout_gravity="center_vertical"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/task_update_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginRight="@dimen/imgbtn_padding"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/update"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/task_delete_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginRight="@dimen/imgbtn_padding"
+            android:layout_gravity="center"
+            android:background="@drawable/delete"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/task_clear_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginRight="@dimen/imgbtn_padding"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/clear"
+            android:visibility="gone"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/export_bt"
+            android:layout_width="@dimen/imgbtn_width"
+            android:layout_height="@dimen/imgbtn_height"
+            android:layout_marginRight="@dimen/imgbtn_padding"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/export"
+            android:textSize="13sp" />
+    </LinearLayout>
+    </merge>

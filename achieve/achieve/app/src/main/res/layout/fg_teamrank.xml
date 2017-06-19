@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">>
+    <include
+        layout="@layout/layout_teamname"></include>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:text="执行状况"
+        android:textSize="14sp"
+        android:drawableBottom="@drawable/shape_line"/>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_top"
+    android:orientation="vertical"
+    android:scrollbars="horizontal" >
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="结果评价KPI"
+                android:background="@color/mistyrose"/> 
+              
+                 <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:text="总计"
+                android:background="@color/mistyrose"
+                /> 
+     
+                <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="当月"
+                android:background="@color/mistyrose"
+                /> 
+                <TextView  
+            
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="当日"
+                android:background="@color/mistyrose"
+                /> 
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal" >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="任务总数"
+                android:background="@color/mistyrose"/>
+            <TextView
+                android:id="@+id/tv_totaltaskscount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+            <TextView
+                android:id="@+id/tv_totaltaskscount_thismonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+
+            <TextView
+                android:id="@+id/tv_totaltaskscount_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+
+        </LinearLayout>
+   <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+   
+     <TextView  
+               
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="完成数"
+                android:background="@color/mistyrose"/> 
+                <TextView  
+                android:id="@+id/tv_finishedtaskscount"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                 <TextView  
+                android:id="@+id/tv_finishedtaskscount_thismonth"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+     
+                <TextView  
+                android:id="@+id/tv_finishedtaskscount_today"  
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center"            
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal" >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="结案率(%)"
+                android:background="@color/mistyrose"/>
+
+            <TextView
+                android:id="@+id/tv_totalclosedrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+            <TextView
+                android:id="@+id/tv_totalclosedrate_thismonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+            <TextView
+                android:id="@+id/tv_totalclosedrate_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                />
+        </LinearLayout>
+
+
+          
+            <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+     
+                 <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="及时率(%)"
+                android:background="@color/mistyrose"/> 
+     
+                 <TextView  
+                android:id="@+id/tv_totaltimely"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                 <TextView  
+                android:id="@+id/tv_totaltimely_thismonth"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                  <TextView  
+                android:id="@+id/tv_totaltimely_today"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+         </LinearLayout>                                    
+    
+              <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal" >
+     
+                 <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="满意率(%)"
+                android:background="@color/mistyrose"/> 
+     
+                 <TextView  
+                android:id="@+id/tv_totalsatisfaction"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                 <TextView  
+                android:id="@+id/tv_totalsatisfaction_thismonth"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+                  <TextView  
+                android:id="@+id/tv_totalsatisfaction_today"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/mistyrose"
+                /> 
+         </LinearLayout>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:text="总积分"
+            android:textSize="14sp"
+            android:drawableBottom="@drawable/shape_line"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:background="@color/mTextColor2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="指标"
+                />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="总计"
+
+                />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="当月"
+
+                />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="当日"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:background="@color/mTextColor2">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="总成就"
+               />
+
+            <TextView
+                android:id="@+id/tv_totalaccomplished"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                />
+            <TextView
+                android:id="@+id/tv_totalaccomplished_thismonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_totalaccomplished_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+              />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:background="@color/mTextColor2">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="总贡献"
+               />
+
+            <TextView
+                android:id="@+id/tv_totalcontribution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_totalcontribution_thismonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_totalcontribution_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal"
+            android:background="@color/mTextColor2">
+           
+        
+                <TextView      
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="执行力"
+              />
+      
+                <TextView  
+                android:id="@+id/tv_totalachieved"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+               />
+                <TextView  
+                android:id="@+id/tv_totalachieved_thismonth"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+               />
+            
+               <TextView  
+                android:id="@+id/tv_totalachieved_today"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+               />
+          </LinearLayout> 
+                        
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal"
+         android:background="@color/mTextColor2">
+     
+                 <TextView  
+    
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="经验值"
+               />
+               <TextView  
+                android:id="@+id/tv_totalexperience"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                /> 
+              
+                <TextView  
+                android:id="@+id/tv_totalexperience_thismonth"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                /> 
+             
+                <TextView  
+                android:id="@+id/tv_totalexperience_today"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                />           
+         </LinearLayout>                      
+       <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal"
+           android:background="@color/mTextColor2">
+     
+                 <TextView  
+               
+                 android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="快乐值"
+              />
+     
+                 <TextView  
+                android:id="@+id/tv_totalenjoyment"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                /> 
+                 <TextView  
+                android:id="@+id/tv_totalenjoyment_thismonth"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                /> 
+                  <TextView  
+                android:id="@+id/tv_totalenjoyment_today"  
+                android:layout_width="0dp"  
+                android:layout_height="wrap_content" 
+                android:layout_weight="0.2"
+                android:gravity="center" 
+               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+
+                /> 
+         </LinearLayout>                         
+      </LinearLayout>   
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:paddingTop="10dp"
+    android:layout_weight="1" 
+    android:gravity="center_vertical"
+    android:visibility="gone"
+    android:orientation="vertical"
+    >
+ 
+       <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="14sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp"
+                android:textStyle="italic"
+                android:text="指标说明："
+               /> 
+               <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*总成就=∑重要度"
+               /> 
+                    <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*总贡献=∑(重要度X紧急度)"
+               /> 
+         
+       <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*满意率(%)=平均结果满意率"
+               /> 
+                <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*及时率(%)=平均及时率"
+               /> 
+      
+              <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*执行力=∑(重要度*时间)"
+               />         
+      <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*经验值=∑(困难度*时间)"
+               /> 
+                <TextView  
+               
+                 android:layout_width="match_parent"  
+                android:layout_height="wrap_content"               
+                android:textSize="13sp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                 android:textStyle="italic"
+                android:text="*快乐值=∑(兴趣度*时间)"
+               />   
+    </LinearLayout>                                     
+</LinearLayout>

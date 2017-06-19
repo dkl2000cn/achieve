@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="wrap_content"   
+    android:background="@android:color/transparent"  
+    android:gravity="center" >  
+
+ <Button  
+        android:id="@+id/task_close_bt"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:background="@drawable/closewin" 
+          android:minHeight="32dp"
+     android:minWidth="32dp"
+        android:layout_alignParentRight="true"  
+        android:layout_alignParentTop="true"   />   
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/task_close_bt" 
+    android:layout_margin="10dp" 
+    android:scrollbars="vertical"
+    android:orientation="vertical" >
+ <TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/task_item2_createdtime_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="createdtime"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/task_item3_description_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/task_item4_importance_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="importance"
+        android:textSize="6sp" />
+    
+    <TextView
+        android:id="@+id/task_item5_urgency_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="urgency"
+        android:textSize="6sp" />
+     <TextView
+        android:id="@+id/task_item6_assess_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="assess"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+     
+     <TextView
+        android:id="@+id/task_item7_priority_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="priority"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    <TextView
+        android:id="@+id/task_item8_passion_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="passion"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    
+    <TextView
+        android:id="@+id/task_item9_difficulty_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="difficulty"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    
+    
+    <TextView
+        android:id="@+id/task10_duration_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="duration"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+      <TextView
+        android:id="@+id/task_item11_achieved_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="achieved"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+       <TextView
+        android:id="@+id/task_item12_enjoyment_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="enjoyment"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+       <TextView
+        android:id="@+id/task_item13_experience_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="experience"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+    
+     <TextView
+        android:id="@+id/task_item14_startedtime_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="startedtime"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+       <TextView
+        android:id="@+id/task_item15_deadline_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="reminder"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/task_item16_progress_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="60%"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/task_item17_reminder_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="reminder"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/task_item18_status_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/task_item19_finished_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="finished"
+        android:layout_margin="1dp"
+        android:textSize="6sp" />
+        <TextView
+        android:id="@+id/task_item20_delayed_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="delayed"
+        android:layout_margin="1dp"
+        android:textSize="6sp" /> 
+                 
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal"
+    android:orientation="horizontal" >
+    <Button
+        android:id="@+id/task_save_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="save"
+        android:textSize="6sp" />
+      <Button
+        android:id="@+id/task_edit_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="edit"
+        android:textSize="6sp" />
+     <Button
+        android:id="@+id/task_delete_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="delete"
+        android:textSize="6sp" />
+         <Button
+        android:id="@+id/add_comments_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="addcomments"
+        android:textSize="6sp" />
+   </LinearLayout>
+     <ListView
+           android:id="@+id/taskcomments_lv"
+           android:layout_width="match_parent"
+           android:layout_height="96dp"
+           android:descendantFocusability="blocksDescendants"
+           android:focusable="true"
+           android:scrollbars="vertical"
+           android:tag="show" />
+    
+  </LinearLayout>
+ </RelativeLayout> 

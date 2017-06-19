@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+
+        <attr name="RingColor" format="color" />
+        <attr name="ArrowColor" format="color" />
+
+        <declare-styleable name="RingView">
+
+            <attr name="RingColor" />
+            <attr name="ArrowColor" />
+
+        </declare-styleable>
+    </resources>

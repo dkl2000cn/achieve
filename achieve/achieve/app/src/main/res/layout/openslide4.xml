@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+     android:fastScrollEnabled="true"
+     android:focusable="false"
+     android:background="#9966cc"
+    android:orientation="vertical" >
+  <TextView  
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                 android:textSize="22sp"
+                  android:gravity="center"
+                 android:layout_marginTop="80dp"
+                  android:textColor="@color/white"
+                 android:text="好帮手 与你同行"
+       />          
+           <ImageView
+               android:id="@+id/iv1"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                 
+                 android:layout_centerVertical="true"
+                  android:layout_centerHorizontal="true"
+                 android:background="@drawable/trophy"
+       /> 
+       <TextView  
+                 android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                 android:layout_below="@+id/iv1"
+                
+                android:layout_marginTop="40dp"
+                 android:textSize="16sp"
+                 android:gravity="center"
+                 android:text="迈向成功之巅"
+       /> 
+        <Button  
+            
+                android:layout_width="wrap_content" 
+                android:layout_height="36dp" 
+                 android:layout_below="@+id/tv3"
+                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                 android:textSize="16sp"
+                 android:padding="2dp"
+                   android:paddingTop="2dp"
+                   android:paddingBottom="2dp"
+                   android:paddingLeft="2dp"
+                   android:paddingRight="2dp"
+                 android:gravity="center"
+                 android:background="@color/orange"
+                 android:onClick="onClick_Login"
+                 android:text="立即体验"
+       />        
+</RelativeLayout>

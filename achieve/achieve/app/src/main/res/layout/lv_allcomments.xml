@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical" >
+    
+  <TextView
+        android:id="@+id/task_item0_taskID_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="taskID"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+  
+   <TextView
+        android:id="@+id/record_item1_recordID_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="recordID"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+   
+  <TextView
+        android:id="@+id/task_item1_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    <EditText
+        android:id="@+id/record_item2_recordTime_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="recordTime"
+        android:textSize="5dp" />
+    
+    <EditText
+        android:id="@+id/record_item3_recordType_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="recordType"
+        android:textSize="5dp" />
+    
+    <EditText
+        android:id="@+id/record_item4_progress_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="passion"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    
+    <EditText
+        android:id="@+id/record_item5_comment_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="difficulty"
+        android:layout_margin="1dp"
+        android:textSize="5dp" />
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:orientation="horizontal" >
+    <Button
+        android:id="@+id/record_confirm_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="confirm"
+        android:textSize="5dp" />
+     <Button
+        android:id="@+id/record_delete_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="delete"
+        android:textSize="5dp" />
+       <Button
+        android:id="@+id/record_update_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="update"
+        android:textSize="5dp" />
+         <Button
+        android:id="@+id/record_clear_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="clear"
+        android:textSize="5dp" />
+</LinearLayout>
+    <ListView
+        android:id="@+id/task_show_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:descendantFocusability="afterDescendants"
+        android:tag="show"
+        android:scrollbars="vertical" >
+    </ListView>
+    
+</LinearLayout>
